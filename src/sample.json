@@ -1,0 +1,122 @@
+{
+  "id": "3d32e561-c617-431f-a8c2-d5be0f28796c",
+  "timestamp": "2017-06-22T09:26:58.33Z",
+  "lang": "en",
+  "result": {
+    "source": "agent",
+    "resolvedQuery": "suprise me",
+    "action": "",
+    "actionIncomplete": false,
+    "parameters": {},
+    "contexts": [
+      {
+        "name": "surprise-me-followup",
+        "parameters": {},
+        "lifespan": 2
+      }
+    ],
+    "metadata": {
+      "intentId": "447024cb-8ced-4cb2-8c7c-91320590653e",
+      "webhookUsed": "true",
+      "webhookForSlotFillingUsed": "false",
+      "webhookResponseTime": 152,
+      "intentName": "surprise-me"
+    },
+    "fulfillment": {
+      "speech": "Here you go:",
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Here you go:"
+        },
+        {
+          "type": 3,
+          "imageUrl": "http://plusquotes.com/images/quotes-img/red-love-romantic-flowers.jpg"
+        },
+        {
+          "type": 1,
+          "title": "Gift no.1",
+          "subtitle": "something cool for you",
+          "imageUrl": "http://www.lakewoodbaptistsbc.com/wp-content/uploads/2014/12/christmas-gift-boxes-h3iatag4.jpg",
+          "buttons": [
+            {
+              "text": "Get present",
+              "postback": "http://www.google.com"
+            }
+          ]
+        },
+        {
+          "type": 1,
+          "title": "Gift no.2",
+          "subtitle": "Another gift for you",
+          "imageUrl": "https://lifeonabranch.files.wordpress.com/2013/11/gifts.jpg",
+          "buttons": [
+            {
+              "text": "Get the gift",
+              "postback": "http://www.google.com"
+            }
+          ]
+        },
+        {
+          "type": 2,
+          "title": "what do you prefer",
+          "replies": [
+            "be happy",
+            "be beautiful",
+            "be smart",
+            "be rich"
+          ]
+        },
+        {
+          "type": 4,
+          "payload": {
+            "text": "Would you like to play a game?",
+            "attachments": [
+              {
+                "text": "Choose a game to play",
+                "fallback": "You are unable to choose a game",
+                "callback_id": "wopr_game",
+                "color": "#3AA3E3",
+                "attachment_type": "default",
+                "actions": [
+                  {
+                    "name": "game",
+                    "text": "Chess",
+                    "type": "button",
+                    "value": "chess"
+                  },
+                  {
+                    "name": "game",
+                    "text": "Falken's Maze",
+                    "type": "button",
+                    "value": "maze"
+                  },
+                  {
+                    "name": "game",
+                    "text": "Thermonuclear War",
+                    "style": "danger",
+                    "type": "button",
+                    "value": "war",
+                    "confirm": {
+                      "title": "Are you sure?",
+                      "text": "Wouldn't you prefer a good game of chess?",
+                      "ok_text": "Yes",
+                      "dismiss_text": "No"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "score": 0.9200000166893005
+  },
+  "status": {
+    "code": 206,
+    "errorType": "partial_content",
+    "errorDetails": "Webhook call failed. Error: Webhook response was empty."
+  },
+  "sessionId": "f134822f-b498-4b79-8471-97c4885120f5"
+}
